@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="DBSFramework" duration-ms="57077" started-at="2016-08-05T07:11:19Z" finished-at="2016-08-05T07:12:16Z">
+    <groups>
+      <group name="regression">
+        <method signature="MyTestCase.MyTestCase1(java.lang.String)[pri:0, instance:test.dbs.scripts.MyTestCase@75aa0d]" name="MyTestCase1" class="test.dbs.scripts.MyTestCase"/>
+        <method signature="MyTestCase.MyTestCase1(java.lang.String)[pri:0, instance:test.dbs.scripts.MyTestCase@32de6c]" name="MyTestCase1" class="test.dbs.scripts.MyTestCase"/>
+      </group> <!-- regression -->
+    </groups>
+    <test name="DBS Test-Chrome" duration-ms="26607" started-at="2016-08-05T07:11:19Z" finished-at="2016-08-05T07:11:46Z">
+      <class name="test.dbs.scripts.MyTestCase">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.dbs.scripts.MyTestCase@75aa0d]" name="beforeClass" is-config="true" duration-ms="12074" depends-on-groups="initGroup" started-at="2016-08-05T12:41:19Z" finished-at="2016-08-05T12:41:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[46]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Windows 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.dbs.scripts.MyTestCase@75aa0d]" name="beforeMethod" is-config="true" duration-ms="36" started-at="2016-08-05T12:41:31Z" finished-at="2016-08-05T12:41:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.dbs.scripts.MyTestCase.MyTestCase1(java.lang.String) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="MyTestCase1(java.lang.String)[pri:0, instance:test.dbs.scripts.MyTestCase@75aa0d]" name="MyTestCase1" duration-ms="11545" started-at="2016-08-05T12:41:31Z" data-provider="getSearchTextValue" finished-at="2016-08-05T12:41:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[euromoney]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyTestCase1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.dbs.scripts.MyTestCase@75aa0d]" name="afterMethod" is-config="true" duration-ms="20" started-at="2016-08-05T12:41:43Z" finished-at="2016-08-05T12:41:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.dbs.scripts.MyTestCase@75aa0d]" name="afterClass" is-config="true" duration-ms="2916" started-at="2016-08-05T12:41:43Z" finished-at="2016-08-05T12:41:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.dbs.scripts.MyTestCase -->
+    </test> <!-- DBS Test-Chrome -->
+    <test name="MyTest - Firefox" duration-ms="57077" started-at="2016-08-05T07:11:19Z" finished-at="2016-08-05T07:12:16Z">
+      <class name="test.dbs.scripts.MyTestCase">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.dbs.scripts.MyTestCase@32de6c]" name="beforeClass" is-config="true" duration-ms="43611" depends-on-groups="initGroup" started-at="2016-08-05T12:41:19Z" finished-at="2016-08-05T12:42:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Selenium]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[33]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Windows 7]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:test.dbs.scripts.MyTestCase@32de6c]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2016-08-05T12:42:03Z" finished-at="2016-08-05T12:42:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.dbs.scripts.MyTestCase.MyTestCase1(java.lang.String) throws java.lang.Throwable]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="MyTestCase1(java.lang.String)[pri:0, instance:test.dbs.scripts.MyTestCase@32de6c]" name="MyTestCase1" duration-ms="12782" started-at="2016-08-05T12:42:03Z" data-provider="getSearchTextValue" finished-at="2016-08-05T12:42:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[euromoney]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MyTestCase1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.dbs.scripts.MyTestCase@32de6c]" name="afterMethod" is-config="true" duration-ms="10" started-at="2016-08-05T12:42:16Z" finished-at="2016-08-05T12:42:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.dbs.scripts.MyTestCase@32de6c]" name="afterClass" is-config="true" duration-ms="664" started-at="2016-08-05T12:42:16Z" finished-at="2016-08-05T12:42:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.dbs.scripts.MyTestCase -->
+    </test> <!-- MyTest - Firefox -->
+  </suite> <!-- DBSFramework -->
+</testng-results>

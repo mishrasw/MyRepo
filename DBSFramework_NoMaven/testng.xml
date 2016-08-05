@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="DBSFramework" parallel= "tests" thread-count="2" preserve-order="true" verbose="1">	
+
+	<listeners>
+		<listener class-name = "org.uncommons.reportng.HTMLReporter"/>	
+		<listener class-name = "org.uncommons.reportng.JUnitXMLReporter"/>			
+	</listeners> 
+	<test name="DBS Test-Chrome" >
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="chrome"/>
+	 <parameter name="browserVersion" value="46"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value ="local"/>
+	 <parameter name="nodeUrl" value="" />
+	  <groups>
+   		 <run>
+   		 	<include name="regression"/>
+    	</run>
+  	 </groups>
+	 	 <classes>
+				<class name="test.dbs.scripts.MyTestCase" />			
+		</classes>
+	 </test>  
+	 	
+	  <test name="MyTest - Firefox" >
+	
+	 <parameter name="automationName" value="Selenium" />	 
+	 <parameter name="browser" value="firefox"/>
+	 <parameter name="browserVersion" value="33"/>	
+	 <parameter name="platformName" value="Windows 7" />  
+	 <parameter name = "environment" value ="local"/>
+	 <parameter name="nodeUrl" value="" />
+	  <groups>
+   		 <run>
+   		 	<include name="regression"/>
+    	</run>
+  	 </groups>
+	 	 <classes>
+				<class name="test.dbs.scripts.MyTestCase" />			
+		</classes>
+	 </test>   
+	 
+	
+	 
+</suite>

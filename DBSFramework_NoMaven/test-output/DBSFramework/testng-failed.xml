@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [DBSFramework]" parallel="tests">
+  <parameter name="environment" value="local"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="browserVersion" value="33"/>
+  <parameter name="automationName" value="Selenium"/>
+  <parameter name="nodeUrl" value=""/>
+  <parameter name="platformName" value="Windows 7"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="DBS Test-Chrome(failed)" parallel="tests">
+    <parameter name="environment" value="local"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="46"/>
+    <parameter name="automationName" value="Selenium"/>
+    <parameter name="nodeUrl" value=""/>
+    <parameter name="platformName" value="Windows 7"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.dbs.scripts.MyTestCase">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="MyTestCase1"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- test.dbs.scripts.MyTestCase -->
+    </classes>
+  </test> <!-- DBS Test-Chrome(failed) -->
+  <test name="MyTest - Firefox(failed)" parallel="tests">
+    <parameter name="environment" value="local"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="browserVersion" value="33"/>
+    <parameter name="automationName" value="Selenium"/>
+    <parameter name="nodeUrl" value=""/>
+    <parameter name="platformName" value="Windows 7"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="test.dbs.scripts.MyTestCase">
+        <methods>
+          <include name="afterClass"/>
+          <include name="afterClass"/>
+          <include name="MyTestCase1"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="beforeClass"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- test.dbs.scripts.MyTestCase -->
+    </classes>
+  </test> <!-- MyTest - Firefox(failed) -->
+</suite> <!-- Failed suite [DBSFramework] -->
