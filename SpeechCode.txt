@@ -1,0 +1,48 @@
+using Ozeki.Media.MediaHandlers;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SpeechSensor
+{
+
+
+    class Program
+    {
+
+        static Microphone microphone;
+        static MediaConnector connector;
+        static SpeechToText speechToText;
+
+        static void Main(string[] args)
+        {
+   
+
+                microphone = Microphone.GetDefaultDevice();
+                connector = new MediaConnector();
+
+                SetupSpeechToText();
+
+                Console.ReadLine();
+            }
+
+        static void SetupSpeechToText()
+        {
+            string[] words = { "Customer ID:", "112", "113", "114" };
+
+            speechToText = SpeechToText.CreateInstance(words);
+            speechToText.WordRecognized += (SpeechToText_WordsRecognized);
+
+            connector.Connect(microphone, speechToText);
+            microphone.Start();
+        }
+
+        static void SpeechToText_WordsRecognized(object sender, SpeechDetectionEventArgs e)
+        {
+            Console.WriteLine(e.Word);
+        }
+
+    }
+}
