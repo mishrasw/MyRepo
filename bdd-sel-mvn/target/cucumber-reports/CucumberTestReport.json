@@ -1,0 +1,1140 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 2,
+            "value": "#Background:"
+          },
+          {
+            "line": 3,
+            "value": "#\tGiven Launch \"aut_url\" URL"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 1320550143,
+              "status": "passed"
+            },
+            "match": {
+              "location": "currencyConverterSteps.initiateDriver()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Verify alert message for no value in amount field",
+        "description": "",
+        "id": "currency-converter-usecases;verify-alert-message-for-no-value-in-amount-field",
+        "after": [
+          {
+            "result": {
+              "duration": 142517142,
+              "status": "passed"
+            },
+            "match": {
+              "location": "currencyConverterSteps.closedriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6690578086,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Launch \"aut_url\" URL",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aut_url",
+                  "offset": 8
+                }
+              ],
+              "location": "currencyConverterSteps.launch_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4940470,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am already on \"Bank | Westpac New Zealand  - Helping Kiwis with their personal banking\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bank | Westpac New Zealand  - Helping Kiwis with their personal banking",
+                  "offset": 17
+                }
+              ],
+              "location": "currencyConverterSteps.i_am_already_on_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 200828301,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I navigate to currency page",
+            "match": {
+              "location": "currencyConverterSteps.i_navigate_to_currency_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3898645,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I am already on \"Currency converter | International \u0026 Migrant - Westpac NZ\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Currency converter | International \u0026 Migrant - Westpac NZ",
+                  "offset": 17
+                }
+              ],
+              "location": "currencyConverterSteps.i_am_already_on_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3048698161,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I switch to frame \"cur_frame\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_frame",
+                  "offset": 19
+                }
+              ],
+              "location": "currencyConverterSteps.i_switch_to_frame(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1196767806,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 11,
+                "value": "#And I enter value \"1\" in \"cur_to_amount_input\" object"
+              }
+            ],
+            "line": 12,
+            "name": "I click on \"cur_submit_button\" object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_submit_button",
+                  "offset": 12
+                }
+              ],
+              "location": "currencyConverterSteps.i_click_on_object(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61575856,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I verify text \"Please enter the amount you want to convert.\" displayed on \"cur_error_label\" object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Please enter the amount you want to convert.",
+                  "offset": 15
+                },
+                {
+                  "val": "cur_error_label",
+                  "offset": 75
+                }
+              ],
+              "location": "currencyConverterSteps.i_verify_text_displayed_on_object(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4707317,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I switch to default frame",
+            "match": {
+              "location": "currencyConverterSteps.i_switch_to_default_frame()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 784699225,
+              "status": "passed"
+            },
+            "match": {
+              "location": "currencyConverterSteps.initiateDriver()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Verify currency A converted successfully to currency B",
+        "description": "",
+        "id": "currency-converter-usecases;verify-currency-a-converted-successfully-to-currency-b;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 146260438,
+              "status": "passed"
+            },
+            "match": {
+              "location": "currencyConverterSteps.closedriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5891573016,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Launch \"aut_url\" URL",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aut_url",
+                  "offset": 8
+                }
+              ],
+              "location": "currencyConverterSteps.launch_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5056587,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am already on \"Bank | Westpac New Zealand  - Helping Kiwis with their personal banking\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bank | Westpac New Zealand  - Helping Kiwis with their personal banking",
+                  "offset": 17
+                }
+              ],
+              "location": "currencyConverterSteps.i_am_already_on_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 173664173,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I navigate to currency page",
+            "match": {
+              "location": "currencyConverterSteps.i_navigate_to_currency_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3641652,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am already on \"Currency converter | International \u0026 Migrant - Westpac NZ\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Currency converter | International \u0026 Migrant - Westpac NZ",
+                  "offset": 17
+                }
+              ],
+              "location": "currencyConverterSteps.i_am_already_on_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2960494755,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I switch to frame \"cur_frame\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_frame",
+                  "offset": 19
+                }
+              ],
+              "location": "currencyConverterSteps.i_switch_to_frame(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 534682621,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I select input \"United States Dollar\" in \"cur_from_currency_combo\" combo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "United States Dollar",
+                  "offset": 16
+                },
+                {
+                  "val": "cur_from_currency_combo",
+                  "offset": 42
+                }
+              ],
+              "location": "currencyConverterSteps.i_select_input_in_combo(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 349678029,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter value \"1\" in \"cur_to_amount_input\" object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "cur_to_amount_input",
+                  "offset": 22
+                }
+              ],
+              "location": "currencyConverterSteps.i_enter_value_in_object(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 173931223,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I select input \"New Zealand Dollar\" in \"cur_to_currency_combo\" combo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New Zealand Dollar",
+                  "offset": 16
+                },
+                {
+                  "val": "cur_to_currency_combo",
+                  "offset": 40
+                }
+              ],
+              "location": "currencyConverterSteps.i_select_input_in_combo(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1239738768,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on \"cur_submit_button\" object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_submit_button",
+                  "offset": 12
+                }
+              ],
+              "location": "currencyConverterSteps.i_click_on_object(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14489707,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I verify \"cur_success_label\" exist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_success_label",
+                  "offset": 10
+                }
+              ],
+              "location": "currencyConverterSteps.element_exist(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4517400,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I switch to default frame",
+            "match": {
+              "location": "currencyConverterSteps.i_switch_to_default_frame()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 794381842,
+              "status": "passed"
+            },
+            "match": {
+              "location": "currencyConverterSteps.initiateDriver()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Verify currency A converted successfully to currency B",
+        "description": "",
+        "id": "currency-converter-usecases;verify-currency-a-converted-successfully-to-currency-b;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 143964534,
+              "status": "passed"
+            },
+            "match": {
+              "location": "currencyConverterSteps.closedriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6278016019,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Launch \"aut_url\" URL",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aut_url",
+                  "offset": 8
+                }
+              ],
+              "location": "currencyConverterSteps.launch_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4740539,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am already on \"Bank | Westpac New Zealand  - Helping Kiwis with their personal banking\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bank | Westpac New Zealand  - Helping Kiwis with their personal banking",
+                  "offset": 17
+                }
+              ],
+              "location": "currencyConverterSteps.i_am_already_on_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 171303916,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I navigate to currency page",
+            "match": {
+              "location": "currencyConverterSteps.i_navigate_to_currency_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4026886,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am already on \"Currency converter | International \u0026 Migrant - Westpac NZ\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Currency converter | International \u0026 Migrant - Westpac NZ",
+                  "offset": 17
+                }
+              ],
+              "location": "currencyConverterSteps.i_am_already_on_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2955195651,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I switch to frame \"cur_frame\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_frame",
+                  "offset": 19
+                }
+              ],
+              "location": "currencyConverterSteps.i_switch_to_frame(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 217292994,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I select input \"New Zealand Dollar\" in \"cur_from_currency_combo\" combo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New Zealand Dollar",
+                  "offset": 16
+                },
+                {
+                  "val": "cur_from_currency_combo",
+                  "offset": 40
+                }
+              ],
+              "location": "currencyConverterSteps.i_select_input_in_combo(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 361172031,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter value \"1\" in \"cur_to_amount_input\" object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "cur_to_amount_input",
+                  "offset": 22
+                }
+              ],
+              "location": "currencyConverterSteps.i_enter_value_in_object(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 493555563,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I select input \"United States Dollar\" in \"cur_to_currency_combo\" combo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "United States Dollar",
+                  "offset": 16
+                },
+                {
+                  "val": "cur_to_currency_combo",
+                  "offset": 42
+                }
+              ],
+              "location": "currencyConverterSteps.i_select_input_in_combo(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1160976940,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on \"cur_submit_button\" object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_submit_button",
+                  "offset": 12
+                }
+              ],
+              "location": "currencyConverterSteps.i_click_on_object(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15704970,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I verify \"cur_success_label\" exist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_success_label",
+                  "offset": 10
+                }
+              ],
+              "location": "currencyConverterSteps.element_exist(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3919559,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I switch to default frame",
+            "match": {
+              "location": "currencyConverterSteps.i_switch_to_default_frame()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 792177837,
+              "status": "passed"
+            },
+            "match": {
+              "location": "currencyConverterSteps.initiateDriver()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Verify currency A converted successfully to currency B",
+        "description": "",
+        "id": "currency-converter-usecases;verify-currency-a-converted-successfully-to-currency-b;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 140942601,
+              "status": "passed"
+            },
+            "match": {
+              "location": "currencyConverterSteps.closedriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6264344193,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Launch \"aut_url\" URL",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aut_url",
+                  "offset": 8
+                }
+              ],
+              "location": "currencyConverterSteps.launch_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4826873,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am already on \"Bank | Westpac New Zealand  - Helping Kiwis with their personal banking\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bank | Westpac New Zealand  - Helping Kiwis with their personal banking",
+                  "offset": 17
+                }
+              ],
+              "location": "currencyConverterSteps.i_am_already_on_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 174190268,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I navigate to currency page",
+            "match": {
+              "location": "currencyConverterSteps.i_navigate_to_currency_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3525767,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am already on \"Currency converter | International \u0026 Migrant - Westpac NZ\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Currency converter | International \u0026 Migrant - Westpac NZ",
+                  "offset": 17
+                }
+              ],
+              "location": "currencyConverterSteps.i_am_already_on_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3173782537,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I switch to frame \"cur_frame\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_frame",
+                  "offset": 19
+                }
+              ],
+              "location": "currencyConverterSteps.i_switch_to_frame(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 519921122,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I select input \"Pound Sterling\" in \"cur_from_currency_combo\" combo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Pound Sterling",
+                  "offset": 16
+                },
+                {
+                  "val": "cur_from_currency_combo",
+                  "offset": 36
+                }
+              ],
+              "location": "currencyConverterSteps.i_select_input_in_combo(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 353413933,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter value \"1\" in \"cur_to_amount_input\" object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "cur_to_amount_input",
+                  "offset": 22
+                }
+              ],
+              "location": "currencyConverterSteps.i_enter_value_in_object(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 166051169,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I select input \"New Zealand Dollar\" in \"cur_to_currency_combo\" combo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "New Zealand Dollar",
+                  "offset": 16
+                },
+                {
+                  "val": "cur_to_currency_combo",
+                  "offset": 40
+                }
+              ],
+              "location": "currencyConverterSteps.i_select_input_in_combo(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1279085950,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on \"cur_submit_button\" object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_submit_button",
+                  "offset": 12
+                }
+              ],
+              "location": "currencyConverterSteps.i_click_on_object(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13613801,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I verify \"cur_success_label\" exist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_success_label",
+                  "offset": 10
+                }
+              ],
+              "location": "currencyConverterSteps.element_exist(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3729482,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I switch to default frame",
+            "match": {
+              "location": "currencyConverterSteps.i_switch_to_default_frame()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 778223881,
+              "status": "passed"
+            },
+            "match": {
+              "location": "currencyConverterSteps.initiateDriver()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Verify currency A converted successfully to currency B",
+        "description": "",
+        "id": "currency-converter-usecases;verify-currency-a-converted-successfully-to-currency-b;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 148841051,
+              "status": "passed"
+            },
+            "match": {
+              "location": "currencyConverterSteps.closedriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5918745895,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Launch \"aut_url\" URL",
+            "match": {
+              "arguments": [
+                {
+                  "val": "aut_url",
+                  "offset": 8
+                }
+              ],
+              "location": "currencyConverterSteps.launch_URL(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4767397,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I am already on \"Bank | Westpac New Zealand  - Helping Kiwis with their personal banking\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Bank | Westpac New Zealand  - Helping Kiwis with their personal banking",
+                  "offset": 17
+                }
+              ],
+              "location": "currencyConverterSteps.i_am_already_on_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 171247329,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I navigate to currency page",
+            "match": {
+              "location": "currencyConverterSteps.i_navigate_to_currency_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6990380,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am already on \"Currency converter | International \u0026 Migrant - Westpac NZ\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Currency converter | International \u0026 Migrant - Westpac NZ",
+                  "offset": 17
+                }
+              ],
+              "location": "currencyConverterSteps.i_am_already_on_page(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2861429812,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I switch to frame \"cur_frame\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_frame",
+                  "offset": 19
+                }
+              ],
+              "location": "currencyConverterSteps.i_switch_to_frame(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 526219067,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I select input \"Swiss Franc\" in \"cur_from_currency_combo\" combo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Swiss Franc",
+                  "offset": 16
+                },
+                {
+                  "val": "cur_from_currency_combo",
+                  "offset": 33
+                }
+              ],
+              "location": "currencyConverterSteps.i_select_input_in_combo(String,String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 353335297,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I enter value \"1\" in \"cur_to_amount_input\" object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 15
+                },
+                {
+                  "val": "cur_to_amount_input",
+                  "offset": 22
+                }
+              ],
+              "location": "currencyConverterSteps.i_enter_value_in_object(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 455403849,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I select input \"Euro\" in \"cur_to_currency_combo\" combo",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Euro",
+                  "offset": 16
+                },
+                {
+                  "val": "cur_to_currency_combo",
+                  "offset": 26
+                }
+              ],
+              "location": "currencyConverterSteps.i_select_input_in_combo(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1160705168,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "I click on \"cur_submit_button\" object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_submit_button",
+                  "offset": 12
+                }
+              ],
+              "location": "currencyConverterSteps.i_click_on_object(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15973945,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I verify \"cur_success_label\" exist",
+            "match": {
+              "arguments": [
+                {
+                  "val": "cur_success_label",
+                  "offset": 10
+                }
+              ],
+              "location": "currencyConverterSteps.element_exist(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3757711,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I switch to default frame",
+            "match": {
+              "location": "currencyConverterSteps.i_switch_to_default_frame()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Currency Converter Usecases",
+    "description": "",
+    "id": "currency-converter-usecases",
+    "keyword": "Feature",
+    "uri": "currencyConverter.feature"
+  }
+]

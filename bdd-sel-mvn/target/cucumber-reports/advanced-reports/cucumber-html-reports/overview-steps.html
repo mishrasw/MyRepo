@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>bdd-sel-mvn</td>
+              <td>1</td>
+            <td>13 Oct 2018, 22:49</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">currencyConverterSteps.closedriver()</td>
+              <td>5</td>
+              <td class="duration" data-value="144505153">0.144</td>
+              <td class="duration" data-value="144505153">0.148</td>
+              <td class="duration" data-value="722525766">0.722</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.element_exist(String)</td>
+              <td>4</td>
+              <td class="duration" data-value="14945605">0.014</td>
+              <td class="duration" data-value="14945605">0.015</td>
+              <td class="duration" data-value="59782423">0.059</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.i_am_already_on_page(String)</td>
+              <td>10</td>
+              <td class="duration" data-value="4641519">0.004</td>
+              <td class="duration" data-value="4641519">0.006</td>
+              <td class="duration" data-value="46415196">0.046</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.i_click_on_object(String)</td>
+              <td>5</td>
+              <td class="duration" data-value="1207454926">1.207</td>
+              <td class="duration" data-value="1207454926">1.279</td>
+              <td class="duration" data-value="6037274632">6.037</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.i_enter_value_in_object(String,String)</td>
+              <td>4</td>
+              <td class="duration" data-value="354399822">0.354</td>
+              <td class="duration" data-value="354399822">0.361</td>
+              <td class="duration" data-value="1417599290">1.417</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.i_navigate_to_currency_page()</td>
+              <td>5</td>
+              <td class="duration" data-value="178246797">0.178</td>
+              <td class="duration" data-value="178246797">0.200</td>
+              <td class="duration" data-value="891233987">0.891</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.i_select_input_in_combo(String,String)</td>
+              <td>8</td>
+              <td class="duration" data-value="385882201">0.385</td>
+              <td class="duration" data-value="385882201">0.534</td>
+              <td class="duration" data-value="3087057608">3.087</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.i_switch_to_default_frame()</td>
+              <td>5</td>
+              <td class="duration" data-value="4126293">0.004</td>
+              <td class="duration" data-value="4126293">0.004</td>
+              <td class="duration" data-value="20631469">0.020</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.i_switch_to_frame(String)</td>
+              <td>5</td>
+              <td class="duration" data-value="2999920183">2.999</td>
+              <td class="duration" data-value="2999920183">3.173</td>
+              <td class="duration" data-value="14999600916">14.999</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.i_verify_text_displayed_on_object(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="61575856">0.061</td>
+              <td class="duration" data-value="61575856">0.061</td>
+              <td class="duration" data-value="61575856">0.061</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.initiateDriver()</td>
+              <td>5</td>
+              <td class="duration" data-value="894006585">0.894</td>
+              <td class="duration" data-value="894006585">1.320</td>
+              <td class="duration" data-value="4470032928">4.470</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">currencyConverterSteps.launch_URL(String)</td>
+              <td>5</td>
+              <td class="duration" data-value="6208651441">6.208</td>
+              <td class="duration" data-value="6208651441">6.690</td>
+              <td class="duration" data-value="31043257209">31.043</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>12</td>
+            <td>62</td>
+            <td class="duration">1.013</td>
+            <td class="duration">31.043</td>
+            <td class="duration">1:2.856</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
