@@ -1,11 +1,10 @@
 Feature: Currency Converter Usecases
-#Background: 
- #	Given Launch "aut_url" URL
 
 Scenario: Verify alert message for no value in amount field
 	Given Launch "aut_url" URL
-	Given I am already on "Bank | Westpac New Zealand  - Helping Kiwis with their personal banking" page
+	Given I am already on "Bank | Westpac New Zealand - Helping Kiwis with their personal banking" page
 	When I navigate to currency page
+	And I verify "cur_frame" exist
 	Given I am already on "Currency converter | International & Migrant - Westpac NZ" page
 	And I switch to frame "cur_frame"
 	#And I enter value "1" in "cur_to_amount_input" object
@@ -17,8 +16,9 @@ Scenario: Verify alert message for no value in amount field
 	
 Scenario Outline: Verify currency A converted successfully to currency B
 	Given Launch "aut_url" URL
-	Given I am already on "Bank | Westpac New Zealand  - Helping Kiwis with their personal banking" page
+	Given I am already on "Bank | Westpac New Zealand - Helping Kiwis with their personal banking" page
 	When I navigate to currency page
+	And I verify "cur_frame" exist
 	Given I am already on "Currency converter | International & Migrant - Westpac NZ" page
 	And I switch to frame "cur_frame"
 	And I select input "<fromCountryCur>" in "cur_from_currency_combo" combo
